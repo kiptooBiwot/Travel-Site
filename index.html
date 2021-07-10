@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--============= FAVICON =============-->
 
 
@@ -12,13 +13,14 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- ============ SWIPER CSS ============-->
-
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" type="text/css">
 
     <!--============= CSS ============-->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
     <title>My Travel Website</title>
 </head>
+
 <body>
     <header class="header" id="header">
         <nav class="nav container">
@@ -90,7 +92,7 @@
             <div class="about__container container grid">
                 <div class="about__data">
                     <h2 class="section__title about__title">
-                        More Information About the Best Beaches 
+                        More Information <br> About the Best Beaches
                     </h2>
                     <p class="about__description">
                         You cab find the most beautiful and pleasant places at the best
@@ -107,20 +109,65 @@
                         <img src="./assets/img/about2.jpg" alt="" class="about__img-two">
                     </div>
                 </div>
-                
             </div>
         </section>
 
         <!--================== DISCOVER ==================-->
         <section class="discover section" id="discover">
+            <h2 class="section__title">Discover the most <br> attractive places</h2>
 
+            <div class="discover__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--========= DISCOVER 1 =============-->
+                    <div class="discover__card swiper-slide">
+                        <img src="./assets/img/discover1.jpg" alt="" class="discover__img">
+
+                        <div class="discover__data">
+                            <h2 class="discover__title">Bali</h2>
+                            <span class="discover__description">
+                                24 tours available
+                            </span>
+                        </div>
+                    </div>
+                    <!--========= DISCOVER 2 =============-->
+                    <div class="discover__card swiper-slide">
+                        <img src="./assets/img/discover2.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Hawaii</h2>
+                            <span class="discover__description">
+                                15 tours available
+                            </span>
+                        </div>
+                    </div>
+                    <!--========= DISCOVER 3 =============-->
+                    <div class="discover__card swiper-slide">
+                        <img src="./assets/img/discover3.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Hvar</h2>
+                            <span class="discover__description">
+                                18 tours available
+                            </span>
+                        </div>
+                    </div>
+                    <!--========= DISCOVER 4 =============-->
+                    <div class="discover__card swiper-slide">
+                        <img src="./assets/img/discover4.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Whitehaven</h2>
+                            <span class="discover__description">
+                                8 tours available
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--================== EXPERIENCE ==================-->
         <section class="experience section">
 
         </section>
-        
+
         <!--================== HOME ==================-->
     </main>
 
@@ -134,9 +181,10 @@
 
 
     <!--================== SWIPER JS ==================-->
-
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
     <!--================== MAIN JS ==================-->
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
