@@ -48,7 +48,7 @@
     --mb-1-25: 1.25rem;
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
-    --mb-2-5: 22.5rem;
+    --mb-2-5: 2.5rem;
 
     /*=============== 5 index ===================*/
     --z-tooltip: 10;
@@ -280,7 +280,7 @@ input {
 .home__data-title {
     font-size: var(--biggest-font-size);
     font-weight: var(--font-medium);
-    /* margin-bottom: var(--mb-2-5); */
+    margin-bottom: var(--mb-2-5);
 }
 
 .home__social {
@@ -498,7 +498,29 @@ input {
 }
 
 /*================ VIDEO ==================*/
+.video__container {
+    padding-bottom: 1rem;
+}
 
+.video__description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.video__content {
+    position: relative;
+}
+
+.video__button {
+    position: absolute;
+    right: 1rem;
+    bottom: -1rem;
+    padding: 1rem 1.5rem;
+}
+
+.video__button-icon {
+    font-size: 1.2rem;
+}
 
 /*================ PLACES ==================*/
 

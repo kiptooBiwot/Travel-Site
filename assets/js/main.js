@@ -51,3 +51,50 @@ var swiper = new Swiper(".discover__container", {
   },
 });
 
+/*===================== VIDEO ==========================*/
+const videoFile = document.getElementById('video-file')
+const videoButton = document.getElementById('video-button')
+const videoIcon = document.getElementById('video-icon')
+
+const playPause = () => {
+    if (videoFile.paused) {
+        // Play video
+        videoFile.play()
+
+        // Change icon to show pause
+        videoIcon.classList.add('ri-pause-line')
+        videoIcon.classList.remove('ri-play-line')
+    } else {
+        if (videoFile.play) {
+          // Pause video
+          videoFile.pause();
+
+          // Change icon to show play
+          videoIcon.classList.add("ri-play-line");
+          videoIcon.classList.remove("ri-pause-line");
+        }
+    }
+}
+
+videoButton.addEventListener('click', playPause)
+
+const finalVideo = () => {
+    // Video ends, icon change
+    videoIcon.classList.remove('ri-pause-line')
+    videoIcon.classList.add('ri-play-line')
+}
+// endedm when the video ends
+videoFile.addEventListener('ended', finalVideo)
+
+
+/*===================== SHOW SCROLL UP ==========================*/
+
+
+/*===================== SCROLL SECTIONS ACTIVE LINK ==========================*/
+
+
+/*===================== SCROLL REVEAL ANIMATION ==========================*/
+
+
+/*===================== DARK LIGHT THEME ==========================*/
+
